@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>严肃文学交流平台评论功能隐私政策 | 严肃文学交流论坛</title><meta name="author" content="严论"><meta name="copyright" content="严论"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="严肃文学交流平台评论功能隐私政策最后更新日期： 2025年11月26日 引言 欢迎使用严肃文学交流平台（以下简称“本平台”）。我们深知个人信息的重要性，并致力于保护您的隐私。本《评论功能隐私政策》（以下简称“本政策”）旨在向您说明，当您使用本平台的评论、留言、回复、点赞、举报等互动交流功能（以下统称“评论功能”）时，我们如何收集、使用、存储和保护您的个人信息，以及您如何管理您的信息。 请您在使用本">
+<meta property="og:type" content="website">
+<meta property="og:title" content="严肃文学交流平台评论功能隐私政策">
+<meta property="og:url" content="https://new.yswxstudy.top/privacy/index.html">
+<meta property="og:site_name" content="严肃文学交流论坛">
+<meta property="og:description" content="严肃文学交流平台评论功能隐私政策最后更新日期： 2025年11月26日 引言 欢迎使用严肃文学交流平台（以下简称“本平台”）。我们深知个人信息的重要性，并致力于保护您的隐私。本《评论功能隐私政策》（以下简称“本政策”）旨在向您说明，当您使用本平台的评论、留言、回复、点赞、举报等互动交流功能（以下统称“评论功能”）时，我们如何收集、使用、存储和保护您的个人信息，以及您如何管理您的信息。 请您在使用本">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://new.yswxstudy.top/media/avatar.jpg">
+<meta property="article:published_time" content="2025-11-26T08:06:37.000Z">
+<meta property="article:modified_time" content="2025-12-10T07:54:03.944Z">
+<meta property="article:author" content="严论">
+<meta property="article:tag" content="关键字">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://new.yswxstudy.top/media/avatar.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/media/favicon.png"><link rel="canonical" href="https://new.yswxstudy.top/privacy/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'undefined')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const hour = new Date().getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (theme === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else theme === 'light' ? activateLightMode() : activateDarkMode()
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4d7076e150b37a5f942dce7e9d11f816";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":true,"pagination":{"enable":true,"hitsPerPage":5},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '严肃文学交流平台评论功能隐私政策',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><style>
+  /* 增强文学感的细节样式 */
+  body {
+    font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
+    line-height: 1.8;
+  }
+  
+  /* 引用块样式强化 */
+  blockquote {
+    border-left: 4px solid #A65B4F;
+    background: rgba(248, 245, 240, 0.5);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  /* 文章标题样式 */
+  .post-title {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  /* 侧边栏卡片圆角减小，更显严肃 */
+  .card-widget, .sticky_layout {
+    border-radius: 4px;
+  }
+</style>
+<script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script defer src="/js/lunar.js"></script><script defer src="/js/day.js"></script><meta name="generator" content="Hexo 8.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/media/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">19</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/media/top_img.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">严肃文学交流论坛</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">严肃文学交流平台评论功能隐私政策</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="container" id="article-container"><h3 id="严肃文学交流平台评论功能隐私政策"><a href="#严肃文学交流平台评论功能隐私政策" class="headerlink" title="严肃文学交流平台评论功能隐私政策"></a><strong>严肃文学交流平台评论功能隐私政策</strong></h3><p><strong>最后更新日期：</strong> 2025年11月26日</p>
+<p><strong>引言</strong></p>
+<p>欢迎使用严肃文学交流平台（以下简称“本平台”）。我们深知个人信息的重要性，并致力于保护您的隐私。本《评论功能隐私政策》（以下简称“本政策”）旨在向您说明，当您使用本平台的<strong>评论、留言、回复、点赞、举报等互动交流功能</strong>（以下统称“评论功能”）时，我们如何收集、使用、存储和保护您的个人信息，以及您如何管理您的信息。</p>
+<p>请您在使用本平台的评论功能前，仔细阅读并理解本政策。<strong>一旦您开始使用评论功能，即表示您已充分理解并同意本政策的内容。</strong></p>
+<p><strong>一、 我们收集哪些信息</strong></p>
+<p>在您使用评论功能时，我们会收集以下两类信息：</p>
+<ol>
+<li><p><strong>您主动提供的信息：</strong></p>
+<ul>
+<li><strong>评论内容：</strong> 您发布、回复的所有文字、标点符号及自行添加的标签。</li>
+<li><strong>账户信息：</strong> 您在本平台使用的<strong>用户名、头像</strong>，以及您在评论时可能选择使用的<strong>个人简介或签名</strong>。</li>
+<li><strong>互动行为：</strong> 您对其他用户的评论进行的<strong>点赞、点踩、收藏、举报</strong>等操作记录。</li>
+</ul>
+</li>
+<li><p><strong>我们自动收集的信息：</strong></p>
+<ul>
+<li><strong>日志信息：</strong> 当您使用评论功能时，我们会自动记录您的<strong>IP地址、设备型号、操作系统版本、浏览器类型</strong>等，用于防止滥用、 spam 和网络攻击。</li>
+<li><strong>元数据：</strong> 您发布每条评论的<strong>精确时间戳（日期和时间）</strong>。</li>
+</ul>
+</li>
+</ol>
+<p><strong>二、 我们如何使用这些信息</strong></p>
+<p>我们严格遵守“合法、正当、必要”的原则，将收集到的信息用于以下目的：</p>
+<ul>
+<li><strong>核心功能服务：</strong> 在平台上公开展示您的评论、用户名和头像，确保交流的顺利进行。</li>
+<li><strong>社区安全与秩序维护：</strong><ul>
+<li>使用您的评论内容、IP地址和互动行为，通过人工或自动技术手段，检测、防范和处置<strong>垃圾评论、网络攻击、欺诈行为的内容</strong>。</li>
+<li>处理您发起的举报，并对相关账号采取限制措施。</li>
+</ul>
+</li>
+<li><strong>产品优化与体验提升：</strong><ul>
+<li>基于匿名的、聚合后的数据，分析评论功能的整体使用情况，以优化产品设计和算法推荐。</li>
+<li>在获得您明确同意的情况下，可能向您发送与您评论相关的回复通知、活动通知等。</li>
+</ul>
+</li>
+<li><strong>履行法律义务：</strong> 在法律法规要求时，配合司法或行政机关提供必要的信息。</li>
+</ul>
+<p><strong>三、 信息的公开与共享</strong></p>
+<p>我们高度重视您的隐私，<strong>不会出售您的个人信息</strong>。仅在以下特定情况下，我们可能会共享您的信息：</p>
+<ul>
+<li><strong>公开披露：</strong> 您主动发布的<strong>评论内容、用户名、头像及相关互动数据</strong>，会依据您的操作在平台指定位置<strong>向全体平台用户公开</strong>。</li>
+<li><strong>授权第三方：</strong> 仅为实现本政策声明的目的，我们可能会聘请可信赖的第三方服务商（如云服务器提供商、数据安全服务商）为我们提供技术支持。我们会要求他们签署严格的保密协议，禁止其将您的信息用于任何其他目的。</li>
+<li><strong>法律与合规要求：</strong> 根据法律、法规、诉讼或政府机关强制性要求，我们可能会在必要时披露您的信息。</li>
+</ul>
+<p><strong>四、 信息的存储与保护</strong></p>
+<ul>
+<li><strong>存储地点：</strong> 原则上，我们在中华人民共和国境内收集和产生的个人信息，将存储在境内。</li>
+<li><strong>存储期限：</strong> 在您未注销账号期间，我们会持续存储您的信息。当您通过注销账号主动删除评论后，我们将在<strong>15个工作日</strong>内从服务器中完成删除。请注意，根据相关法律法规，您的<strong>操作日志、举报记录等信息可能需要保留更长时间</strong>。</li>
+<li><strong>安全措施：</strong> 我们采用符合行业标准的安全技术措施（如加密技术、访问控制）来保护您的信息免受未经授权的访问、使用或泄漏。</li>
+</ul>
+<p><strong>五、 您的权利</strong></p>
+<p>您对自己的个人信息享有以下权利：</p>
+<ul>
+<li><strong>删除与注销：</strong><ul>
+<li>受技术原因限制，<strong>您发出的每条评论都必须联系我们进行删除</strong>。</li>
+</ul>
+</li>
+</ul>
+<p><strong>六、 我们如何保护未成年人的信息</strong></p>
+<p>我们非常重视未成年人的个人信息保护。若您是<strong>未满18周岁的未成年人</strong>，请在您的监护人指导下使用我们的服务。我们鼓励监护人为未成年人提供关于网络信息安全的指导。</p>
+<p>对于经父母或监护人同意而收集的未成年人个人信息，我们只会在法律允许、父母或监护人明确同意或保护未成年人所必要的情况下使用或公开披露。如果我们发现自己在未获得可证实的监护人同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关数据。</p>
+<p><strong>七、 政策的更新</strong></p>
+<p>我们可能会根据业务调整或法律法规的变化适时修订本政策。若修订内容会实质性改变您的权利或义务，我们将通过在平台发布显著通知或直接向您发送通知的方式提醒您。请您定期查阅本政策以了解最新动态。</p>
+<p><strong>八、 联系我们</strong></p>
+<p>如果您对本政策或您的个人信息处理有任何疑问、意见或投诉，请通过以下方式联系我们：</p>
+<ul>
+<li>客服邮箱：<a href="mailto:&#121;&#115;&#119;&#120;&#x79;&#106;&#120;&#x7a;&#64;&#49;&#54;&#x33;&#x2e;&#99;&#x6f;&#x6d;">yswxyjxz@163.com</a></li>
+<li>平台内“帮助与反馈”渠道</li>
+</ul>
+<p>我们将在收到您请求后的<strong>15个工作日内</strong>予以回复。</p>
+<hr>
+<p><strong>再次感谢您选择严肃文学交流平台，并为我们营造深度、理性的文学社区贡献您的真知灼见。</strong></p>
+</div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 严论</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><script src="/js/tw_cn.js?v=5.5.2"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/click-heart.min.js" async="async" mobile="true"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.2"></script></div></div></body></html>
