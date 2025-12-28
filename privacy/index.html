@@ -157,7 +157,14 @@ btf.addGlobalFn('pjaxComplete', () => {
   isHighlightShrink: false,
   isToc: false,
   pageType: 'page'
-}</script><link rel="stylesheet" href="/css/style.css?v=2.0"><style>
+}</script><style>
+  /* 强制应用主题色 */
+  :root {
+    --main-color: #2C3E50 !important;
+    --theme-color: #A65B4F !important;
+  }
+</style>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0"><style>
   /* 增强文学感的细节样式 */
   body {
     font-family: "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
